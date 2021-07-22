@@ -21,7 +21,7 @@
 	 */
 	memory {
 		device_type = "memory";
-		reg = <0x80000000 0x3fd00000>;	/* 1021 MB */
+		reg = <0x80000000 0x1fd00000>;	/* 509 MB */
 	};
 
 	/* Poweroff GPIO probably connected to CPCAP */
