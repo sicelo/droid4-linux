@@ -29,6 +29,18 @@
 
 };
 
+&memory0 {
+    reg = <0x80000000 0x1fd00000>;	/* 509 MB */
+};
+
+&dsi1_out_ep: endpoint {
+	lanes = <1 0 3 2 5 4>;
+	//CLK+, CLK-, DATA0+, DATA0-, DATA1+, DATA1-, ...
+	//lanes = <0 1 2 3 4 5>;
+	// clk+ = 1
+	// data1_pos = 1
+};
+
 &i2c1 {
 	led-controller@38 {
 		compatible = "ti,lm3532";
